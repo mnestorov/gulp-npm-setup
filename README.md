@@ -18,6 +18,8 @@ GULP is a toolkit for automating painful or time-consuming tasks in your develop
 
 ## How to Install
 
+Install the gulp command line utility: `npm install --global gulp-cli`
+
 - [Quick Start guide for Gulp installation](https://gulpjs.com/docs/en/getting-started/quick-start)
 
 # NPM packages (sample)
