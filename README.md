@@ -2,27 +2,27 @@
 
 Gulp and NPM setup for front-end web development.
 
-# NPM
+## NPM
 
 NPM is the package manager for JavaScript.
 
-## How to Install
+### How to Install
 
 NPM is distributed with Node.js, which means that when we download Node.js, we automatically get npm installed on our computer.
 
 - [Node.js](https://nodejs.org/en/)
 
-# GULP
+## GULP
 
 GULP is a toolkit for automating painful or time-consuming tasks in your development.
 
-## How to Install
+### How to Install
 
 Install the gulp command line utility: `npm install --global gulp-cli`
 
 - [Quick Start guide for Gulp installation](https://gulpjs.com/docs/en/getting-started/quick-start)
 
-# NPM packages (sample)
+## NPM packages (sample)
 
 - [yargs](https://www.npmjs.com/package/yargs) - yargs helps you build interactive command line tools.
 - [gulp-sass](https://www.npmjs.com/package/gulp-sass) - sass plugin for gulp.
@@ -38,7 +38,7 @@ Install the gulp command line utility: `npm install --global gulp-cli`
 - [gulp-zip](https://www.npmjs.com/package/gulp-zip) - ZIP compress files.
 - [gulp-replace](https://www.npmjs.com/package/gulp-replace) - a string replace plugin for gulp 3.
 
-# Use latest JavaScript version in our gulpfile
+## Use latest JavaScript version in our gulpfile
 
 Node already supports a lot of ES2015+ features, but to avoid compatibility problems we need to **install [Babel](https://babeljs.io/docs/en/babel-register)** and rename our **_gulpfile.js_** as **_gulpfile.babel.js_**.
 
@@ -188,8 +188,14 @@ export const prod = gulp.series(clean, gulp.parallel(styles, images, scripts, ve
 export const bundle = gulp.series(prod, compress);
 ```
 
-# GULP commands
+## GULP commands
 
 These are the commands we define in our **_gulp.babel.js_** file.
 
 `gulp dev`, `gulp prod`, `gulp bundle --prod`, `gulp clean`
+
+---
+
+## License
+
+This project is released under the MIT License.
