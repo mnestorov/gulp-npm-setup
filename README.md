@@ -1,4 +1,8 @@
-# Up and running with Gulp and NPM
+# NPM / Gulp - Setup
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
+## Overview
 
 Gulp and NPM setup for front-end web development.
 
@@ -22,7 +26,7 @@ Install the gulp command line utility: `npm install --global gulp-cli`
 
 - [Quick Start guide for Gulp installation](https://gulpjs.com/docs/en/getting-started/quick-start)
 
-## NPM packages (sample)
+## NPM Packages (sample)
 
 - [yargs](https://www.npmjs.com/package/yargs) - yargs helps you build interactive command line tools.
 - [gulp-sass](https://www.npmjs.com/package/gulp-sass) - sass plugin for gulp.
@@ -48,7 +52,7 @@ Then create a **_.babelrc_** file with the preset configuration.
 
 ## Sample .babelrc
 
-```js
+```javascript
 {
     "presets": [ "@babel/preset-env" ]
 }
@@ -58,7 +62,7 @@ Then create a **_.babelrc_** file with the preset configuration.
 
 This is our **_gulp.babel.js_** written in ES2015+ syntax with npm packages we use.
 
-```js
+```javascript
 import gulp from 'gulp';
 import yargs from 'yargs';
 import cleancss from 'gulp-clean-css';
@@ -188,11 +192,14 @@ export const prod = gulp.series(clean, gulp.parallel(styles, images, scripts, ve
 export const bundle = gulp.series(prod, compress);
 ```
 
-## GULP commands
+## GULP Commands
 
 These are the commands we define in our **_gulp.babel.js_** file.
 
-`gulp dev`, `gulp prod`, `gulp bundle --prod`, `gulp clean`
+- `gulp dev`
+- `gulp prod`
+- `gulp bundle --prod`
+- `gulp clean`
 
 ---
 
